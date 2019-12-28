@@ -2,7 +2,7 @@ var path = require('path');
 var HtmlWebpackPlugin =  require('html-webpack-plugin');
 
 module.exports = {
-    entry : './app/index.js',
+    entry : './src/index.js',
     output : {
         path : path.resolve(__dirname , 'dist'),
         filename: 'index_bundle.js',
@@ -33,11 +33,25 @@ module.exports = {
 
     devServer: {
         historyApiFallback: true,
+        // this makes sure to proxy backend 5000 to client 8080
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        port: 8080,
+        proxy: {
+            '/api': {
+                target: 'http://localhost:5000',
+                changeOrigin: true,
+                secure: false,
+                pathRewrite: {
+                    '^/api':'' // remove /api
+                  }
+            }
+        }
     },
     mode:'development',
     plugins : [
         new HtmlWebpackPlugin ({
-            template : './app/index.html'
+            template : './src/index.html'
         })
     ]
 

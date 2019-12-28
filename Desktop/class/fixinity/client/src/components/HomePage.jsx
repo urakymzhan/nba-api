@@ -7,7 +7,7 @@ function HomePage() {
     return ( 
         <MainDiv>
             <GlobalStyle whiteColor />
-            <h1>This is a HomePage of an Application</h1>
+            <h1>This is the HomePage of Fixinity </h1>
             <p style = {{marginBottom: "2rem"}}>Click below to login</p>
             <Link to="/login" id="login-redirect">Login</Link>
         </MainDiv>

@@ -7,7 +7,7 @@ function Dashboard() {
     return ( 
       <MainDiv>
         <GlobalStyle whiteColor />
-        <h1>This is a Dashboard of Application</h1>
+        <h1>This is the Dashboard of Fixinity</h1>
         <p style = {{marginBottom: "2rem"}}>Click below to enter customers page</p>
         <Link to="/customers" id="main-page-link">Customers</Link>
       </MainDiv>  
