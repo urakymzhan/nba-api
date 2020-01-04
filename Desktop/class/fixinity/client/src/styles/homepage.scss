@@ -1,6 +1,13 @@
+:root {
+    --bgColor: #273746;
+    --dashboardColor: #626567;
+    --bgColorTwo: #F2F4F4;
+    --fontFamily: 'Roboto', sans-serif;
+}
 
 #login-redirect{
-    color: darkblue;
-    border: 1px solid black;
+    color: #111;
     padding: 0.5rem;
+    background-color: #ABEBC6;
+    border-radius: 8px;
 }

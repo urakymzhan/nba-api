@@ -26,8 +26,8 @@ class Customers extends Component {
         }
     }
     componentDidMount(){
-        axios.get('/api')
-        .then(res => {
+        axios.get('/api') 
+            .then(res => {
             const customers = res.data;
             this.setState({
                 customersData: customers,

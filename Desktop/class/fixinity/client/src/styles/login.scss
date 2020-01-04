@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto&display=swap');
 
-:root {
-    --bgColor: #273746;
-}
 
 body {
     background-color: var(--bgColor);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fontFamily);
 }
 
 #login-wrapper {
