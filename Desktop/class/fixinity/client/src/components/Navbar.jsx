@@ -11,7 +11,7 @@ function Navbar() {
             <li>Features</li>
             <li>Pricing</li>
             <li>FAQ</li>
-            <li>Contact</li>
+            <li>Support</li>
         </UL>
         <button className="signup">SIGN UP</button>
       </MainDiv> 

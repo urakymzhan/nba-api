@@ -3,17 +3,18 @@ import { Link } from "react-router-dom";
 import "../styles/homepage.scss";
 import styled, { createGlobalStyle } from 'styled-components';
 import Navbar from './Navbar.jsx';
-import background from '../assets/carrepair.jpg'; // figure out why its not importing
+// import background from '../assets/carrepair.jpg'; // figure out why its not importing
 
 function HomePage() {
     return (
       <React.Fragment>
         <GlobalStyle whiteColor />
           <Navbar/> 
-          <MainDiv>    
-              <h1>This is the HomePage of Fixinity </h1>
-              <p style = {{marginBottom: "2rem"}}>Click below to login</p>
-              <Link to="/login" id="login-redirect">Login</Link>
+          <MainDiv>
+                <h1 style={{margin: '0', fontSize: "50px"}}>MOVE FORWARD</h1>
+                <p style={{margin: '0 0 2rem 0', fontSize: "18px"}}>Your trusted on demand car repair platform</p>
+                <button className="tryforfree">Try for free</button>
+                <Link to="/login" id="login-redirect">Proceed to Login</Link>
           </MainDiv>
         </React.Fragment>
     
@@ -22,7 +23,6 @@ function HomePage() {
 export default HomePage;
 
 // STYLING
-
 // this sets my current page body styling
 const GlobalStyle = createGlobalStyle`
   body {
@@ -35,12 +35,13 @@ const GlobalStyle = createGlobalStyle`
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: cover;  
+    background-size: cover;   
   }
 `
 const MainDiv = styled.div`
     text-align: center;
-    height: 100vh;
-    color:#ABEBC6;
-    margin-top: 8rem;
+    min-height: 100vh;
+    color:var(--fixWhite);
+    background-color:rgba(0, 0, 0, 0.6);
+    padding-top: 10rem;
 `

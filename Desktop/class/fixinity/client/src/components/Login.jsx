@@ -3,6 +3,7 @@ import '../styles/login.scss';
 import {
     Link
   } from "react-router-dom";
+import styled, { createGlobalStyle } from 'styled-components';
 
 class Login extends Component {
     constructor(props) {
@@ -53,6 +54,7 @@ class Login extends Component {
     render() {
         return (
             <div id="login-wrapper">
+                <GlobalStyle whiteColor />
                 <h2>LOGIN TO YOUR ACCOUNT</h2>
                 <form id="form" onSubmit={this.handleSubmit} >
                     <label htmlFor="email" className="email-label">     
@@ -100,3 +102,13 @@ class Login extends Component {
 }
 
 export default Login;
+
+
+// STYLING
+// this sets my current page body styling
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: var(--bgColor);
+    font-family: var(--fontFamily); 
+  }
+  `

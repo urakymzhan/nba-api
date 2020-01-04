@@ -3,29 +3,44 @@ import { Link } from "react-router-dom";
 import "../styles/dashboard.scss";
 import styled, { createGlobalStyle } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSortDown, faBell, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { 
+  faSortDown, faBell, faUserCircle,
+  faChevronDown, faChevronUp, faUsers,
+  faComments, faCog
+} from '@fortawesome/free-solid-svg-icons';
 import Map from './Map.jsx'
 function Dashboard() {
     return ( 
        <>
          <GlobalStyle whiteColor />
-         <div className="sidebar">    
-          <h4 style={{margin: " 2rem 0 2rem 4rem"}}>
+         <div className="dashboard-sidebar">    
+          <h4 style={{margin: " 2rem 0 2rem 4rem", color:"var(--fixBlue)"}}>
             <FontAwesomeIcon id="avatar"icon={faUserCircle} style={{marginRight: "4px"}}/> 
               Ulan's Dashboard
           </h4>
           <ul>
-            <li><Link to="/customers" id="main-page-link">Customers</Link></li>
-            <li><a href="#"></a>Chat</li>
-            <li></li>
+            <li>
+            <FontAwesomeIcon id="dashboard-users"icon={faUsers} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
+              <Link to="/customers" id="main-page-link">Customers</Link>
+            </li>
+            <li>
+            <FontAwesomeIcon id="dashboard-users"icon={faComments} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
+              <a href="#"></a>
+              Chat
+            </li>
+            <li style={{marginTop: "38rem"}}>
+            <FontAwesomeIcon id="dashboard-users"icon={faCog} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
+              <a href="#"></a>
+              Settings
+            </li>
           </ul>
          </div>
-         <div className="content">
+         <div className="dashboard-content">
             <nav className="nav">
                 <ul>
-                  <li><FontAwesomeIcon id="notification"icon={faBell}/></li>
+                  <li><FontAwesomeIcon id="dashboard-notification"icon={faBell}/></li>
                   <li>|</li>
-                  <li>Ulan Rakymzhanov <FontAwesomeIcon id="font-dropdown"icon={faSortDown}/></li>
+                  <li>Ulan Rakymzhanov <FontAwesomeIcon id="dashboard-dropdown"icon={faSortDown}/></li>
                 </ul>
             </nav>
             <div className="charts">
@@ -39,12 +54,14 @@ function Dashboard() {
               </div>
               <div style={{borderBottom: "4px solid red"}}>
                 <h2 style={{color: "red"}}> TOAL EXPENSES</h2><br />
-                <p>v<span style={{fontSize: "26px"}}>61</span>% </p>
+                <p><FontAwesomeIcon icon={faChevronDown}/><span style={{fontSize: "26px"}}> 61</span>% </p>
               </div>
-              <div style={{borderBottom: "4px solid blue"}}>
-                <h2 style={{color: "blue"}}> NEW ACCOUNTS</h2><br />
-                <p>^<span style={{fontSize: "26px"}}>310</span>% </p>
+              <div style={{borderBottom: "4px solid darkgray"}}>
+                <h2 style={{color: "darkgray"}}> NEW ACCOUNTS</h2><br />
+                <p><FontAwesomeIcon icon={faChevronUp}/><span style={{fontSize: "26px"}}> 310</span>% </p>
               </div>
+              <p style={{margin: '0 0 0 1rem', color: "var(--fixBlue"}}>ForeCast</p>
+              <Map/>
             </div>
         </div>        
       </> 
@@ -61,6 +78,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => (props.whiteColor ? 'var(--bgColorTwo)' : inherit)};
     margin: 0;
     padding: 0;
-    color: var(--dashboardColor);
+    color: var(--textColor);
   }
 `

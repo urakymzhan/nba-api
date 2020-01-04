@@ -2,18 +2,18 @@
 #add-customer-btn {
     margin: 1rem 0;
     font-size: 15px;
-    background-color:#3272EA;
+    background-color: var(--fixBlue);
     border-radius: 6px;
     padding: 0.6rem;
     width: 170px;
-    color: #FDFEFE;
+    color: var(--fixWhite);
     outline: none;
     cursor: pointer;
 }
 #status-column {
     padding: 8px 14px;
-    background-color: #3272EA;
-    color: #FDFEFE;
+    background-color: var(--fixBlue);
+    color: var(--fixWhite);
     border-radius: 3px;
     box-sizing: border-box;
     outline: none;
@@ -24,7 +24,7 @@
 }
 #popup-h3 {
     margin-left: 1.5rem;
-    text-shadow: 2px 2px 25px gray;
+    text-shadow: 2px 2px 22px gray;
 }
 #new-name, #new-phone, #new-vin, #new-zip, #new-status, #new-action {
     padding: 1rem;
@@ -42,8 +42,8 @@
     float: left;
     font-size: 14px;
     padding: 0.4rem 1rem;
-    background-color: #3272EA;
-    color: #FDFEFE;
+    background-color: var(--fixBlue);
+    color: var(--fixWhite);
     border-radius: 5px;
     outline: none;
     cursor: pointer;
@@ -58,7 +58,7 @@
 }
 #pagination {
     padding: 12px 8px;
-    color: #808B96;
+    color: var(--textColor);
 }
 #pagination td {
     border-bottom: none;
@@ -67,7 +67,7 @@
     padding-right: 2rem;
 }
 #pagination:hover {
-    background-color: #FDFEFE;
+    background-color: var(--fixWhite);
 }
 .pag-1 {
     margin-right: 1rem;
@@ -97,7 +97,7 @@
 
 #edit-customer {
     margin-right: 1rem; 
-    color: #3272EA;
+    color: var(--fixBlue);
     cursor: pointer;
 }
 

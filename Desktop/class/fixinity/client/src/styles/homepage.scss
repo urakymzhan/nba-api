@@ -1,13 +1,23 @@
 :root {
     --bgColor: #273746;
-    --dashboardColor: #626567;
+    --textColor: #626567;
     --bgColorTwo: #F2F4F4;
     --fontFamily: 'Roboto', sans-serif;
+    --fixBlue: #3272EA;
+    --fixWhite: #FDFEFE;
+    --shadowColor: #D7DBDD;
 }
 
-#login-redirect{
-    color: #111;
-    padding: 0.5rem;
-    background-color: #ABEBC6;
-    border-radius: 8px;
+#login-redirect, .tryforfree {
+    color: var(--fixWhite);
+    padding: 0.8rem;
+    background-color: var(--fixBlue);
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    width: 140px;
+    cursor: pointer;
+}
+.tryforfree {
+    margin-right: 8px;
 }

@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto&display=swap');
 
 
-body {
-    background-color: var(--bgColor);
-    font-family: var(--fontFamily);
-}
-
 #login-wrapper {
     top: 50%; 
     left: 50%; 
@@ -18,11 +13,14 @@ body {
     background-color: #FDFEFE;
     border-radius: 5px;
     color: var(--bgColor);
-    
-}
-h2 {
-    text-align: center;
-    margin: 4rem 0 2rem 0;
+    h2 {
+        text-align: center;
+        margin: 4rem 0 2rem 0;
+    } 
+    a {
+        text-decoration: none;
+        color: #5499C7;
+    }  
 }
 
 #email, #password {
@@ -83,8 +81,5 @@ label.checkbox-label input[type=checkbox]{
     padding: 0;
     text-align: center;
 }
-a {
-    text-decoration: none;
-    color: #5499C7;
-}
+
 

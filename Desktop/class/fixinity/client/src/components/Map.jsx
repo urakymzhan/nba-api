@@ -1,6 +1,5 @@
 
 import React from 'react';
-
 import {
   XYPlot,
   XAxis,
@@ -23,8 +22,8 @@ for (let i = 0; i < 20; i++) {
 export default function Map() {
   return (
     <XYPlot
-      width={300}
-      height={200}
+      width={900}
+      height={400}
       colorType="linear"
       colorDomain={[0, 9]}
       colorRange={['yellow', 'orange']}

@@ -134,8 +134,7 @@ class Customers extends Component {
 export default Customers;
 
 
-// STYLING 
-
+//  ---- STYLING -----
 // this sets my current page body styling
 const GlobalStyle = createGlobalStyle`
   body {
@@ -155,7 +154,6 @@ const Ul = styled.ul`
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-    // font-size: 16px;
 
     li {
         display: inline-block;
@@ -167,36 +165,36 @@ const Ul = styled.ul`
     li:last-child {
         margin-left: 0.6rem; 
         font-size: 14px;
-        color: #808B96;
+        color: var(--textColor);
     }
     & #nav-vert-line {
-        color: #808B96;
+        color: var(--textColor);
     }
     & #nav-home-icon{
-        color: #3272EA;
+        color: var(--fixBlue);
     }
     & #nav-right-icon {
         font-size: 12px;
         margin-left: 1rem;
-        color: #808B96;
+        color: var(--textColor);
     }
 `
 
 const Table = styled.table`
     text-align: center;
     width: 100%;
-    background-color: #FDFEFE;
+    background-color: var(--fixWhite);
     border: 1px solid #ddd;
     border-radius: 12px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-spacing: 0;
-    box-shadow: 4px 4px 4px #ddd;
+    box-shadow: 5px 1px 8px var(--shadowColor);
 
     th {
         border-bottom: 0.02rem solid #ddd;
         padding: 12px 8px;
-        color: #808B96;
+        color: #626567;
         text-align: center;
         font-size: 12px;
     }
