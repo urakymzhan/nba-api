@@ -8,15 +8,16 @@
     --shadowColor: #D7DBDD;
 }
 
-#login-redirect, .tryforfree {
+.login-redirect, .tryforfree {
     color: var(--fixWhite);
     padding: 0.8rem;
     background-color: var(--fixBlue);
     border-radius: 6px;
     border: none;
-    font-size: 14px;
-    width: 140px;
+    font-size: 16px;
+    width: 160px;
     cursor: pointer;
+    text-decoration: none;
 }
 .tryforfree {
     margin-right: 8px;

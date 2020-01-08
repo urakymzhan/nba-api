@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import Login  from './components/Login.jsx'
-import HomePage from './components/HomePage.jsx';
+import HomePage from './components/Pages/HomePage.jsx';
 import Customers from './components/Customers.jsx';
 import Dashboard from './components/Dashboard.jsx';
 import {

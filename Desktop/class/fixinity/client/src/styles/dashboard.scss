@@ -25,6 +25,11 @@
             transition: 0.2s linear;
         }
     }
+    #dashboard-settings:hover {
+        color: var(--fixBlue);
+        transform: scaleY(1.2);
+        transition: 0.2s linear;
+    }
 }
 .dashboard-content {
     min-height: 100vh;
@@ -41,6 +46,7 @@
     background-color: var(--fixWhite);
     text-align: right;
     height: 3rem;
+    box-shadow: 8px 0 5px -2px #D7DBDD;
     ul {
         list-style: none;
         padding: 0.8rem;

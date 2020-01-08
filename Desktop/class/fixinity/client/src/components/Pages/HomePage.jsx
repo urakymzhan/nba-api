@@ -1,26 +1,32 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "../styles/homepage.scss";
+import "../../styles/homepage.scss";
 import styled, { createGlobalStyle } from 'styled-components';
-import Navbar from './Navbar.jsx';
+import NavBar from '../Organisms/O_NavBar.jsx'
 // import background from '../assets/carrepair.jpg'; // figure out why its not importing
+import   A_Button from '../Atoms/A_Button.jsx' // fix later to import from index.js 
+import { tryforfree, tryfreeValue, loginredirect, proceedLoginValue} from '../constants'
 
 function HomePage() {
     return (
       <React.Fragment>
         <GlobalStyle whiteColor />
-          <Navbar/> 
+          <NavBar/> 
           <MainDiv>
                 <h1 style={{margin: '0', fontSize: "50px"}}>MOVE FORWARD</h1>
                 <p style={{margin: '0 0 2rem 0', fontSize: "18px"}}>Your trusted on demand car repair platform</p>
-                <button className="tryforfree">Try for free</button>
-                <Link to="/login" id="login-redirect">Proceed to Login</Link>
+                <A_Button className={tryforfree} value={tryfreeValue}/> 
+                <Link to="/login"><A_Button className={loginredirect} value={proceedLoginValue}/></Link>
           </MainDiv>
         </React.Fragment>
     
     )
 }
 export default HomePage;
+
+
+
+
 
 // STYLING
 // this sets my current page body styling

@@ -14,26 +14,26 @@ function Dashboard() {
        <>
          <GlobalStyle whiteColor />
          <div className="dashboard-sidebar">    
-          <h4 style={{margin: " 2rem 0 2rem 4rem", color:"var(--fixBlue)"}}>
-            <FontAwesomeIcon id="avatar"icon={faUserCircle} style={{marginRight: "4px"}}/> 
+          <h4 id="dashboard-avatar" style={{margin: " 2rem 0 2rem 4rem", color:"var(--fixBlue)"}}>
+            <FontAwesomeIcon icon={faUserCircle} style={{marginRight: "4px"}}/> 
               Ulan's Dashboard
           </h4>
           <ul>
-            <li>
-            <FontAwesomeIcon id="dashboard-users"icon={faUsers} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
+            <li id="dashboard-customers">
+            <FontAwesomeIcon icon={faUsers} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
               <Link to="/customers" id="main-page-link">Customers</Link>
             </li>
-            <li>
-            <FontAwesomeIcon id="dashboard-users"icon={faComments} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
+            <li id="dashboard-chat">
+            <FontAwesomeIcon icon={faComments} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
               <a href="#"></a>
               Chat
             </li>
-            <li style={{marginTop: "38rem"}}>
-            <FontAwesomeIcon id="dashboard-users"icon={faCog} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
+          </ul>
+          <p id="dashboard-settings" style={{margin: "38rem 0 0 2.2rem"}}>
+            <FontAwesomeIcon icon={faCog} style={{marginRight: "4px", color:"var(--fixBlue)"}}/>
               <a href="#"></a>
               Settings
-            </li>
-          </ul>
+            </p>
          </div>
          <div className="dashboard-content">
             <nav className="nav">

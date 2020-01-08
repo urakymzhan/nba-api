@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import '../styles/navbar.scss';
+import React from 'react';
+import '../../styles/navbar.scss';
 import styled from 'styled-components';
+import A_Button  from '../Atoms/A_Button.jsx' // fix later to import from index.js 
 
-function Navbar() {
+function NavBar() {
     return ( 
       <MainDiv>
         <div className="logo">fiXinity</div>
@@ -13,12 +14,12 @@ function Navbar() {
             <li>FAQ</li>
             <li>Support</li>
         </UL>
-        <button className="signup">SIGN UP</button>
+        <A_Button className="signup" value="SIGN UP"/> 
       </MainDiv> 
     )
 }
 
-export default Navbar;
+export default NavBar;
 
 const MainDiv = styled.div`
 text-align: center;
