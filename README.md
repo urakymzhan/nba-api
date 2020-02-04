@@ -1,2 +1,4 @@
+
 # nba-api
-New Orleans Pelicans page
+my favorite team info 
+
