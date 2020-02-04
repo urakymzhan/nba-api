@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>my fav NBA teams</title>
+    <meta name="author" content="Ulan Rakymzhanov">
+    <meta name="description" content="project of my favorite NBA teams">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3b5201b944.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page">
+        
+        <!-- logo -->
+        <section class="logo">
+            <img id="logo" src="./assets/nop-logo.png"> 
+        </section>
+        
+        <!-- live stats -->
+
+        <section class="live-stats">
+            <h3 style="color: green;">LIVE STATS</h3>
+            <div class="api-result">
+                <ul class="api-text">
+                    <!-- api result text-->
+                </ul>
+            </div>
+        </section>
+
+        <!-- players image slider -->
+        <section class="image-slider">
+
+            <div class="left-wrapper">
+                <button class="left" onclick="nextSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>  
+            </div>
+
+            <div class="slider-content-wrapper">
+                <div class="current-slider-image fade">
+                    <img src="./assets/lonzo.jpg" alt="player image"> 
+                    <em>2 Lonzo Ball </em>
+                    <button class="player-info-btn">+</button>
+                </div>
+
+                <div class="current-slider-image fade">
+                    <img src="./assets/ingram.jpg" alt="player image"> 
+                    <em>14 Brandon Ingram</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/zion.jpg" alt="player image"> 
+                    <em>1 Zion Williamson</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/josh-hart.jpg" alt="player image"> 
+                    <em>3 Josh Hart</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/jrue-holiday.jpg" alt="player image"> 
+                    <em>11 Jrue Holiday</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/jj-reddick.jpg" alt="player image"> 
+                    <em>4 JJ Redick</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/derrick-favors.jpg" alt="player image"> 
+                    <em>22 Derrick Favors</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/jaxson-hayes.jpg" alt="player image"> 
+                    <em>10 Jaxson Hayes</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/jahlil-okafor.jpg" alt="player image"> 
+                    <em>9 Jahlil Okafor</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/nickeil-aw.jpg" alt="player image"> 
+                    <em>0 Nickeil Alexander-Walker</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/zylan-cheatham.jpg" alt="player image"> 
+                    <em>45 Zylan Cheatham</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/josh-gray.jpg" alt="player image"> 
+                    <em>5 Josh Gray</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/frank-jackson.jpg" alt="player image"> 
+                    <em>15 Frank Jackson</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/nicolo-melli.jpg" alt="player image"> 
+                    <em>20 Nicolo Melli</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/darius-miller.jpg" alt="player image"> 
+                    <em>21 Darius Miller</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/kenrich-williams.jpg" alt="player image"> 
+                    <em>34 Kenrich Williams</em>
+                </div>
+                <div class="current-slider-image fade">
+                    <img src="./assets/etwaun-moore.jpg" alt="player image"> 
+                    <em>55 E'Twaun Moore</em>
+                </div>
+            </div>
+           
+            <div class="right-wrapper"> 
+               <button class="right" onclick="nextSlide(1)">
+                   <i class="fas fa-chevron-right"></i>
+               </button>  
+            </div>
+
+        </section>
+        
+        <!-- footer -->
+        <footer>
+            Copyright 2020 © Ulan Rakymzhanov
+        </footer>
+
+    </div>
+
+     <script src="./helpers/slider.js"></script>
+     <script src="./helpers/api_results.js"></script>
+
+</body>
+</html>

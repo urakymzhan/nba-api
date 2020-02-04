@@ -1,0 +1,7 @@
+fix left arrow. when hovering its appearing slowly
+
+use proxy for api calls
+
+sass instead of css ?
+
+fix player info (+) button
