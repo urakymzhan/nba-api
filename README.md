@@ -5,5 +5,6 @@
 ### BONUS: my favorite teams information included.
 Players infos also coming from external API's.
 
+![main page](public/assets/main.png)
 
 
