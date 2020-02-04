@@ -5,3 +5,6 @@ use proxy for api calls
 sass instead of css ?
 
 fix player info (+) button
+
+change live stats date every day (write script for it)
+

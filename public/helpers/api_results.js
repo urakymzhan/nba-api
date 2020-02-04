@@ -1,64 +1,59 @@
 
 
-const api = document.querySelector('.api-text');
+const apiInfo = document.querySelector('.lonzo-info');
+const apiScore = document.querySelector(".live-api-text");
 
 
-// getData().then(data => {
-//     // var text = JSON.stringify(data); 
-//     // api.innerHTML = text;
-//     // console.log(data);
-//     console.log(data);
-
-// })
-
-// console.log(data);
-
-// const getData = async () => {
-//  let playerData  = await fetch('/data');
-//  //use string literals
-//  let playerJson = await playerData.json();
-//  return playerJson;
-// }
-
-// const getPlayer = async () => {
-//     let jsonData = await getData();
-//         // for(let [key, value] of Object.entries(jsonData)) {
-//         //     // console.log(`${key}: ${value}`);
-//         //     api.innerHTML += `${key}: ${value} <br>`;
-//         // }
-//         console.log(jsonData)
-//         // for(player in Object.keys(jsonData)){
-//             const players = Object.entries(jsonData)
-//             players.map((player) => {
-//                 api.innerHTML += `<li>${player[0]}  :  ${player[1]} </li>`
-//             })
-//             // api.innerHTML += player;r
-//             console.log(players)
-//         // }
-// }
-// getPlayer();
-
-
-const getData = async () => {
+const getPlayerInfo = async () => {
     let playerData  = await fetch('/info');
-    //use string literals
-
     let playerArray = await playerData.json();
     let playerJson = await playerArray[0]
-    console.log(playerJson)
     return playerJson;
 }
 
 const getPlayer = async () => {
-    let jsonData = await getData();
-        // console.log(jsonData)
-        // for(player in Object.keys(jsonData)){
+    let jsonData = await getPlayerInfo();
             const players = Object.entries(jsonData)
             players.map((player) => {
-                api.innerHTML += `<li>${player[0]}  :  ${player[1]} </li>`
+                //  i don't want to display all info from API
+                const condition = ["firstName", "lastName", "birthdate", "school", "country", "height", "weight"
+                , "jersey", "position", "rosterstatus", "teamName","teamCity","fromYear","toYear","gamesPlayedFlag",
+                    "draftYear", "draftRound", "draftNumber"];
+                    condition.forEach((word) => {
+                        if (player[0].includes(word)) {
+                            apiInfo.innerHTML += `<li>${player[0]}  :  ${player[1]} </li>`
+                        }
+                    })
             })
-            // api.innerHTML += player;r
-            console.log(players)
-        // }
 }
 getPlayer();
+
+
+const getScoreData = async () => {
+    let playerData  = await fetch('/score');
+    let playerArray = await playerData.json();
+    let playerJson = await playerArray.lineScore
+    return playerJson;
+}
+
+const getScore = async () => {
+    let jsonData = await getScoreData();
+    const iNeed = jsonData.reduce(function(filtered, option) {
+        // console.log(option)
+        // if (option[0] === "gameId" || option[0] === "pts" || option[0] === "teamCityName") {
+            filtered.push(option.gameId);
+            filtered.push(option.teamCityName);
+            filtered.push(option.pts);
+
+        // }
+        return filtered;
+    }, [])
+    console.log(iNeed);
+    for(let i=0; i<iNeed.length; i++) {
+    let removed = iNeed.splice(0, 6);
+    console.log(removed);
+     apiScore.innerHTML += `<li>${removed[1]} - ${removed[4]} <br> ${removed[2]} - ${removed[5]}</li>`
+    }        
+}
+getScore();
+

@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-//  cors --> loading for long
+//  cors --> loading too long
 // const cors = require('cors');
 // app.use(cors);
 
@@ -28,16 +28,22 @@ app.listen(PORT, () => {
 const NBA = require("nba");
 const lonzo = NBA.findPlayer('Lonzo Ball');
 
-NBA.stats.playerInfo({ PlayerID: lonzo.playerId }).then((info) => {
-    
-app.get('/info', function(req, res) {
-    res.send(info.commonPlayerInfo);
+app.get('/data', function(req, res) {
+    res.send(lonzo);
 });
 
+
+NBA.stats.playerInfo({ PlayerID: lonzo.playerId }).then((info) => {
+    app.get('/info', function(req, res) {
+        res.send(info.commonPlayerInfo);
+    });
+});
+
+NBA.stats.scoreboard({ gameDate: "02/03/2020" }).then((score) => {
+    app.get('/score', function(req, res) {
+        res.send(score);
+    });
 });
 
 // console.log(info);
 
-app.get('/data', function(req, res) {
-    res.send(lonzo);
-});

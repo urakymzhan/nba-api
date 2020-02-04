@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>my fav NBA teams</title>
+    <title>nba api</title>
     <meta name="author" content="Ulan Rakymzhanov">
     <meta name="description" content="project of my favorite NBA teams">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,8 @@
         <section class="live-stats">
             <h3 style="color: green;">LIVE STATS</h3>
             <div class="api-result">
-                <ul class="api-text">
+                <span style="color: #3f51b5" >FINAL &nbsp; SCORE &nbsp;  02-04-2020 </span>
+                <ul class="live-api-text">
                     <!-- api result text-->
                 </ul>
             </div>
@@ -42,7 +43,22 @@
                 <div class="current-slider-image fade">
                     <img src="./assets/lonzo.jpg" alt="player image"> 
                     <em>2 Lonzo Ball </em>
-                    <button class="player-info-btn">+</button>
+                    <!-- <button class="player-info-btn">+</button> -->
+
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn" class="player-info-btn"> + </button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <h3 style="color: green">Player Info</h3>
+                        <ul class="lonzo-info api-text">
+                        <!-- api result text-->
+                        </ul>
+                        <span class="close">&times;</span>
+                      </div>
+                    </div>
+                    
                 </div>
 
                 <div class="current-slider-image fade">
@@ -128,6 +144,6 @@
 
      <script src="./helpers/slider.js"></script>
      <script src="./helpers/api_results.js"></script>
-
+     <script src="./helpers/modal.js"></script>
 </body>
 </html>
