@@ -67,12 +67,16 @@ body {
 }
 .left, .right {
     padding: 15px;
-    height: 100px;
-    background-color: rgba(22, 71, 104, 0.4);
+    height: 200px;
+    /*background-color: rgba(22, 71, 104, 0.4);*/
+    background: transparent;
     color: white;
     border: none;
     text-decoration: none;
     outline: none;   
+}
+.fa-chevron-right, .fa-chevron-left {
+    font-size: 28px;
 }
 
 /* live stats section */
@@ -87,20 +91,20 @@ body {
     overflow: hidden;
     border-radius: 5px;
 }
-.api-result {
+.score-result {
     max-width: 80%;
     margin: 0 auto;
 }
-.live-api-text {
+.live-api-score {
     list-style: none;
 }
-.live-api-text li {
+.live-api-score li {
     margin-bottom: 10px;
     border: 1px solid orange;
     padding: 6px;
     border-radius: 5px;
 }
-.live-api-text li:nth-child(odd) {
+.live-api-score li:nth-child(odd) {
     color: yellow;
 }
 em {

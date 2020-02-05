@@ -1,9 +1,17 @@
 
 
 const apiInfo = document.querySelector('.lonzo-info');
-const apiScore = document.querySelector(".live-api-text");
+const apiScore = document.querySelector(".live-api-score");
+const currentDate = document.querySelector(".score-date-api");
 
 
+// Current Date
+// moment CDN used on browser
+const today = moment().format('LL');
+currentDate.innerHTML = today;
+
+
+//  get player info from api
 const getPlayerInfo = async () => {
     let playerData  = await fetch('/info');
     let playerArray = await playerData.json();
@@ -28,7 +36,7 @@ const getPlayer = async () => {
 }
 getPlayer();
 
-
+//  get score info from api
 const getScoreData = async () => {
     let playerData  = await fetch('/score');
     let playerArray = await playerData.json();
@@ -39,21 +47,17 @@ const getScoreData = async () => {
 const getScore = async () => {
     let jsonData = await getScoreData();
     const iNeed = jsonData.reduce(function(filtered, option) {
-        // console.log(option)
-        // if (option[0] === "gameId" || option[0] === "pts" || option[0] === "teamCityName") {
             filtered.push(option.gameId);
             filtered.push(option.teamCityName);
             filtered.push(option.pts);
 
-        // }
         return filtered;
     }, [])
-    console.log(iNeed);
     for(let i=0; i<iNeed.length; i++) {
     let removed = iNeed.splice(0, 6);
-    console.log(removed);
+    // console.log(removed);
      apiScore.innerHTML += `<li>${removed[1]} - ${removed[4]} <br> ${removed[2]} - ${removed[5]}</li>`
-    }        
+    }      
 }
 getScore();
 

@@ -10,6 +10,16 @@ const PORT = process.env.PORT || 3000;
 // const cors = require('cors');
 // app.use(cors);
 
+// current date
+var dateFormat = require('dateformat');
+
+var now = new Date();
+// console.log(dateFormat(now, "mm/dd/yyyy"));
+// moment date
+var moment = require('moment');
+const today = moment().format("l");
+console.log(today)
+
 // serve static files
 app.use(express.static(__dirname + '/../public/'));
 
@@ -39,11 +49,12 @@ NBA.stats.playerInfo({ PlayerID: lonzo.playerId }).then((info) => {
     });
 });
 
-NBA.stats.scoreboard({ gameDate: "02/03/2020" }).then((score) => {
+NBA.stats.scoreboard({ gameDate: `${today}` }).then((score) => {
     app.get('/score', function(req, res) {
         res.send(score);
     });
 });
 
 // console.log(info);
+
 
