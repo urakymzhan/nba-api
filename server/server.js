@@ -11,14 +11,8 @@ const PORT = process.env.PORT || 3000;
 // app.use(cors);
 
 // current date
-var dateFormat = require('dateformat');
-
-var now = new Date();
-// console.log(dateFormat(now, "mm/dd/yyyy"));
-// moment date
 var moment = require('moment');
 const today = moment().format("l");
-console.log(today)
 
 // serve static files
 app.use(express.static(__dirname + '/../public/'));
