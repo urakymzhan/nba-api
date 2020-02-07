@@ -17,16 +17,18 @@
         
         <!-- HEADER -->
         <header class="header">
-            <img src="./assets/ball-logo.png" class="ball-logo">
-            <img id="logo" src="./assets/nop-logo.png"> 
+            <img src="./assets/nba.png" class="ball-logo-left"> 
+            <img id="logo" src="./assets/nop-logo.png">
+            <img src="./assets/ball-logo.png" class="ball-logo-right">
         </header>
         
         <!-- MAIN -->
         <div class="main">
+            <!-- LIVE SCORES -->
             <section class="live-stats">
-                <h3 style="color: green;">LIVE STATS</h3>
+                <h1 id="live-stats-h1">LIVE STATS</h1>
                 <div class="score-result">
-                        <span class="score-date-api" style="color: #3f51b5"> 
+                        <span class="score-date-api"> 
                             <!-- current date -->
                         </span>
                     <ul class="live-api-score">
@@ -34,168 +36,13 @@
                     </ul>
                 </div>
             </section>
-
-            <div class="section-slider-wrapper">
-                <aside class="left-aside">
-                    <div style="color: #fff" >
-                         slide to see images more >>
-                    </div>
-                </aside>                
-                <!-- players image slider -->
-                <section class="image-slider">
-
-                    <div class="left-wrapper">
-                        <button class="left" onclick="nextSlide(-1)">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>  
-                    </div>
-                
-                    <div class="slider-content-wrapper">
-                        <!-- Zo -->
-                        <div class="current-slider-image ">
-                            <img src="./assets/lonzo.jpg" alt="player image"> 
-                            <em>2 Lonzo Ball </em>
-                            <!-- try using modals later instead of navigating to new page -->
-                            <a href="lonzo.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <!-- Ingram -->
-                        <div class="current-slider-image">
-                            <img src="./assets/ingram.jpg" alt="player image"> 
-                            <em>14 Brandon Ingram</em>
-                            <a href="ingram.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <!-- Zion -->
-                        <div class="current-slider-image fade">
-                            <img src="./assets/zion.jpg" alt="player image"> 
-                            <em>1 Zion Williamson</em>
-                            <a href="zion.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/josh-hart.jpg" alt="player image"> 
-                            <em>3 Josh Hart</em>
-                            <a href="joshhart.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/jrue-holiday.jpg" alt="player image"> 
-                            <em>11 Jrue Holiday</em>
-                            <a href="jrue.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/jj-reddick.jpg" alt="player image"> 
-                            <em>4 JJ Redick</em>
-                            <a href="jjreddick.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/derrick-favors.jpg" alt="player image"> 
-                            <em>22 Derrick Favors</em>
-                            <a href="derrick.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/jaxson-hayes.jpg" alt="player image"> 
-                            <em>10 Jaxson Hayes</em>
-                            <a href="jaxson.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/jahlil-okafor.jpg" alt="player image"> 
-                            <em>9 Jahlil Okafor</em>
-                            <a href="jahlil.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/nickeil-aw.jpg" alt="player image"> 
-                            <em>0 Nickeil Alexander-Walker</em>
-                            <a href="nickeil.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/zylan-cheatham.jpg" alt="player image"> 
-                            <em>45 Zylan Cheatham</em>
-                            <a href="zylan.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/josh-gray.jpg" alt="player image"> 
-                            <em>5 Josh Gray</em>
-                            <a href="joshgray.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/frank-jackson.jpg" alt="player image"> 
-                            <em>15 Frank Jackson</em>
-                            <a href="frank.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/nicolo-melli.jpg" alt="player image"> 
-                            <em>20 Nicolo Melli</em>
-                            <a href="nicolo.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/darius-miller.jpg" alt="player image"> 
-                            <em>21 Darius Miller</em>
-                            <a href="darius.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/kenrich-williams.jpg" alt="player image"> 
-                            <em>34 Kenrich Williams</em>
-                            <a href="kenrich.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                        <div class="current-slider-image fade">
-                            <img src="./assets/etwaun-moore.jpg" alt="player image"> 
-                            <em>55 E'Twaun Moore</em>
-                            <a href="etuan.html" target="_blank">
-                                <button type="button" class="player-info-btn"> + </button>
-                            </a>
-                        </div>
-                    </div>
-                   
-                    <div class="right-wrapper"> 
-                       <button class="right" onclick="nextSlide(1)">
-                           <i class="fas fa-chevron-right"></i>
-                       </button>  
-                    </div>
-                </section>
-
-                <aside class="right-aside">
-                    <div style="color: #fff" >
-                        << slide to images see more 
-                    </div>
-                </aside>               
-            </div>
-
-
+            <!-- NEWS -->
             <section class="news">
                 <h1 id="news-h1">NEWS</h1>
                 <div class="news1">
                     <div class="headline">
                         <h1 class="headline1"> <!-- headline --> </h1>
+                        <hr>
                     </div>
                     <div class="descritpion">
                         <p class="description1"> <!-- descritpion --> </p>
@@ -207,6 +54,7 @@
                 <div class="news2">
                     <div class="headline">
                         <h1 class="headline2"> <!-- headline --> </h1>  
+                        <hr>
                     </div>
                     <div class="descritpion">
                         <p class="description2"> <!-- descritpion --> </p>   
@@ -218,6 +66,7 @@
                 <div class="news3">
                     <div class="headline">
                         <h1 class="headline3"> <!-- headline --> </h1>  
+                        <hr>
                     </div>
                     <div class="descritpion">
                         <p class="description3"> <!-- descritpion --> </p>    
@@ -227,10 +76,178 @@
                     </div>
                 </div>
             </section>
+            <!-- SLIDER -->
+            <div class="section-slider-wrapper">
+                <aside class="left-aside">
+                    <div>
+                        <h3> RECORD </h3>
+                        <hr>
+                        <div class="record-nop">
+                            <p class="standing-summary"><p>
+                            <p class="overall-record"></p>   
+                            <p class="record-summary"></p>
+                        </div>
+                    </div>
+                </aside>                
+                <!-- players image slider -->
+                <section class="image-slider">
+                    <div class="left-wrapper">
+                        <button class="left" onclick="nextSlide(-1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>  
+                    </div>
+                    <div class="slider-content-wrapper">
+                        <!-- Zo -->
+                        <div class="current-slider-image fade">
+                            <img src="./assets/lonzo.jpg" alt="player image"> 
+                            <span><span class="number">2</span> Lonzo Ball</span>
+                            <!-- try using modals later instead of navigating to new page -->
+                            <a href="lonzo.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <!-- Ingram -->
+                        <div class="current-slider-image fade">
+                            <img src="./assets/ingram.jpg" alt="player image"> 
+                            <span><span class="number">14</span> Brandon Ingram</span>
+                            <a href="ingram.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <!-- Zion -->
+                        <div class="current-slider-image fade">
+                            <img src="./assets/zion.jpg" alt="player image"> 
+                            <span><span class="number">1</span> Zion Williamson</span>
+                            <a href="zion.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/josh-hart.jpg" alt="player image"> 
+                            <span><span class="number">3</span> Josh Hart</span>
+                            <a href="joshhart.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/jrue-holiday.jpg" alt="player image"> 
+                            <span><span class="number">11</span> Jrue Holiday</span>
+                            <a href="jrue.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/jj-reddick.jpg" alt="player image"> 
+                            <span><span class="number">4</span> JJ Redick</span>
+                            <a href="jjreddick.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/derrick-favors.jpg" alt="player image"> 
+                            <span><span class="number">22</span> Derrick Favors</span>
+                            <a href="derrick.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/jaxson-hayes.jpg" alt="player image"> 
+                            <span><span class="number">10</span> Jaxson Hayes</span>
+                            <a href="jaxson.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/jahlil-okafor.jpg" alt="player image"> 
+                            <span><span class="number">9</span> Jahlil Okafor</span>
+                            <a href="jahlil.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/nickeil-aw.jpg" alt="player image"> 
+                            <span><span class="number">0</span> Nickeil Alexander-Walker</span>
+                            <a href="nickeil.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/zylan-cheatham.jpg" alt="player image"> 
+                            <span><span class="number">45</span> Zylan Cheatham</span>
+                            <a href="zylan.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/josh-gray.jpg" alt="player image"> 
+                            <span><span class="number">5</span> Josh Gray</span>
+                            <a href="joshgray.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/frank-jackson.jpg" alt="player image"> 
+                            <span><span class="number">15</span> Frank Jackson</span>
+                            <a href="frank.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/nicolo-melli.jpg" alt="player image"> 
+                            <span><span class="number">20</span> Nicolo Melli</span>
+                            <a href="nicolo.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/darius-miller.jpg" alt="player image"> 
+                            <span><span class="number">21</span> Darius Miller</span>
+                            <a href="darius.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/kenrich-williams.jpg" alt="player image"> 
+                            <span><span class="number">34</span> Kenrich Williams</span>
+                            <a href="kenrich.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                        <div class="current-slider-image fade">
+                            <img src="./assets/etwaun-moore.jpg" alt="player image"> 
+                            <span><span class="number">55</span> E'Twaun Moore</span>
+                            <a href="etuan.html" target="_blank">
+                                <button type="button" class="player-info-btn"> + </button>
+                            </a>
+                        </div>
+                    </div>           
+                    <div class="right-wrapper"> 
+                       <button class="right" onclick="nextSlide(1)">
+                           <i class="fas fa-chevron-right"></i>
+                       </button>  
+                    </div>
+                </section>
+
+                <aside class="right-aside">
+                    <div>
+                        <h3> NEXT FIXTURE </h3>
+                        <hr>
+                        <div class="event-nop">
+                            <p class="event-name"><p>
+                            <p class="event-date"></p>   
+                            <p class="event-address"></p>
+                            <p class="event-city"></p>
+                            <p class="event-state"></p>
+                        </div>
+                    </div>
+                </aside>               
+            </div>
+
         </div> 
         <!-- FOOTER -->
         <footer>
-            Copyright 2020 © Ulan Rakymzhanov
+            <p>All Rights Reserved 2020 </p>
+            <p>Copyright © Ulan Rakymzhanov</p>
         </footer>
 
     </div>
@@ -238,5 +255,6 @@
      <script src="./helpers/slider.js"></script>
      <script src="./helpers/api-score.js"></script>
      <script src="./helpers/news.js"></script>
+     <script src="./helpers/nop-news.js"></script>
 </body>
 </html>

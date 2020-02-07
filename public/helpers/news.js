@@ -16,8 +16,8 @@ const getNews = () => {
     .then(news => { return news.json()
     })
     .then((response) => {
-        console.log(response.articles);
-        console.log(response.articles[0].description);
+        // console.log(response.articles);
+        // console.log(response.articles[0].description);
 
         // headline
         headline1.innerHTML = response.articles[0].headline;

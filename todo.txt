@@ -6,10 +6,18 @@ Looks like i have to do some Proxy config staff for that.
 
 - fix player info (+) button
 
-- sass instead of css ?
+- sass instead of css if moved to REACTJS?
 
 - resuse conditons on players api files
 
 - maybe set up a database and store news images.
 
 - catch api errors and do somehting when data is not available
+
+- change score list items to create element attribute
+
+- self invoking functions or think how not to invoke functions globally
+
+- make it more responsive
+
+- push to https://pages.github.com/
