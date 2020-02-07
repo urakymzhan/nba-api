@@ -1,0 +1,60 @@
+
+/* Globals */
+*:after, *:before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-image: url('./assets/bgImage.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.main {
+    padding: 20px 10px;
+/*    background:*/
+}
+.info, .video {
+    background: #000;
+}
+.info {
+    border: 1px solid green;
+    margin-bottom: 20px;
+}
+.video {
+    border: 1px solid green;
+}
+section {
+    width: 40%;
+    margin: auto;
+}
+.info-list {
+    overflow: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    border-bottom: 1px solid green;
+    color: orange;
+    padding: 2px 0;
+    overflow: auto;
+}
+.info-list li:first-letter {
+    color: #fff;
+}
+
+/* FOOTER */
+footer {
+    color: #fff;
+    text-align: center;
+    min-height: 100px;
+    /*border: 1px solid red;*/
+    padding-top: 40px;
+}
+
+
+
+
+

@@ -1,8 +1,15 @@
-fix left arrow. when hovering its appearing slowly
-
-use proxy for api calls
-
-fix player info (+) button
 
 
-sass instead of css ?
+- Ideally get rid of most helper functions and solve ETIMEDOUT error on server.js to handle all players in one single file.
+For that i need to figure out why NBA api unstable. Because of me or its from their side. 
+Looks like i have to do some Proxy config staff for that.
+
+- fix player info (+) button
+
+- sass instead of css ?
+
+- resuse conditons on players api files
+
+- maybe set up a database and store news images.
+
+- catch api errors and do somehting when data is not available
