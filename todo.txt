@@ -22,6 +22,8 @@ Looks like i have to do some Proxy config staff for that.
 
 - push to https://pages.github.com/
 
+- fix hr under news h1 
+
 
 
 API -> https://github.com/bttmly/nba
