@@ -37,9 +37,9 @@ const getScore = async () => {
         if (removed[2] === null || removed[5] === null) {
             apiScore.innerHTML += `<li>${removed[1]} - ${removed[4]} <br> <span class="score-span"> 0 - 0 </span> </li>`
         }
-        else {
+        // else {
             apiScore.innerHTML += `<li>${removed[1]} - ${removed[4]} <br> <span class="score-span">${removed[2]} - ${removed[5]} </span> </li>`
-        }
+        // }
     }      
 }
 getScore();

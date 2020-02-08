@@ -4,25 +4,23 @@
 For that i need to figure out why NBA api unstable. Because of me or its from their side. 
 Looks like i have to do some Proxy config staff for that.
 
-- fix player info (+) button
+- fix score null issue
 
 - sass instead of css if moved to REACTJS?
 
-- resuse conditons on players api files
+- reuse conditons on players api js files
 
-- maybe set up a database and store news images.
+- maybe set up a database and store news/player images.
 
 - catch api errors and do somehting when data is not available
 
-- change score list items to create element attribute
+- change score list items to createElement attribute
 
 - self invoking functions or think how not to invoke functions globally
 
-- make it more responsive
+- make it more responsive (zoom out > 50%). Remove fixed position footer and make page more organized when zoomed so that footer always stays on the bottom but fixed.
 
 - push to https://pages.github.com/
-
-- fix hr under news h1 
 
 
 
