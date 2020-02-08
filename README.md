@@ -10,6 +10,10 @@
 
 - Will be live soon -> 
 
+### to run
+- locally: npm start:dev
+- deployment: npm start
+
 ![main page](public/assets/main.png)
 
 
