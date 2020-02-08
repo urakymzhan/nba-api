@@ -8,7 +8,8 @@
 - Players infos also coming from external API.
 - [Momentjs](https://momentjs.com/) used in all date formats.
 
-- Will be live soon -> 
+fix why API not wokring on heroku deployment (Mixed Content error)
+- live -> https://nba-pelicans.herokuapp.com/
 
 ### to run
 - locally: npm start:dev
