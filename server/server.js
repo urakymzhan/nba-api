@@ -30,16 +30,18 @@ app.listen(PORT, () => {
 // NBA API requirement
 const NBA = require("nba");
 
-// SCORE ENDPOINT
-NBA.stats.scoreboard({ gameDate: `${today}` })
-    .then((score) => {
-        app.get('/score', function(req, res, next) {
-            res.send(score);
-        })
-    })
-    .catch((err) => {
-        console.log('scoreboard api failed', err)
-});
+// SCORE ENDPOINT - NOTE: using different API now on the browser
+// NBA.stats.scoreboard({ gameDate: `${today}` })
+//     .then((score) => {
+//         app.get('/score', function(req, res, next) {
+//             res.send(score);
+//         })
+//     })
+//     .catch((err) => {
+//         console.log('scoreboard api failed', err)
+// });
+
+
 
 // // Pelicans players
 const lonzo = NBA.findPlayer('lonzo ball');

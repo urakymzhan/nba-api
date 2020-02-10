@@ -4,7 +4,7 @@
 For that i need to figure out why NBA api unstable. Because of me or its from their side. 
 Looks like i have to do some Proxy config staff for that.
 
-- fix score null issue
+- fix players info section -> use second API source. First is unstable. Works on local but not on development
 
 - sass instead of css if moved to REACTJS?
 
@@ -18,10 +18,8 @@ Looks like i have to do some Proxy config staff for that.
 
 - self invoking functions or think how not to invoke functions globally
 
-- make it more responsive (zoom out > 50%). Remove fixed position footer and make page more organized when zoomed so that footer always stays on the bottom but fixed.
-
-- push to https://pages.github.com/
+- (zoom out > 50%). Remove fixed position footer and make page more organized when zoomed so that footer always stays on the bottom but fixed.
 
 
-API -> https://github.com/bttmly/nba
+API -> https://github.com/bttmly/nba // not a stable on development. Find another source or use below link.
     -> https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b

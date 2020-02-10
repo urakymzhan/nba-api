@@ -14,9 +14,9 @@ const getNOPNextEvent = () => {
     })
     .then((response) => {
         // console.log(response.team.nextEvent[0]);
-        console.log(response.team.standingSummary);
-        console.log(response.team.record.items[0].description);
-        console.log(response.team.record.items[0].summary);
+        // console.log(response.team.standingSummary);
+        // console.log(response.team.record.items[0].description);
+        // console.log(response.team.record.items[0].summary);
 
         nextEventName.innerHTML = response.team.nextEvent[0].name;
         nextEventDate.innerHTML = response.team.nextEvent[0].date;
@@ -42,7 +42,7 @@ const getNOPRecord = () => {
     })
     .then((response) => {
         // console.log(response.team.nextEvent[0]);
-        console.log(response.team.nextEvent[0].competitions[0].venue);
+        // console.log(response.team.nextEvent[0].competitions[0].venue);
 
         standingSummary.innerHTML = response.team.standingSummary;
         overallRecord.innerHTML = response.team.record.items[0].description;
