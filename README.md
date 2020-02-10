@@ -1,5 +1,6 @@
 
 ## nba live score 
+### live -> https://nba-pelicans.herokuapp.com/
 - Shows correct scores every day 
 - Up to date records and next Fixtures of New Orleans Pelicans Team
 - Used external NBA apis.
@@ -8,13 +9,9 @@
 - Players infos also coming from external API.
 - [Momentjs](https://momentjs.com/) used in all date formats.
 
-fix why API not wokring on heroku deployment (Mixed Content error)
-- live -> https://nba-pelicans.herokuapp.com/
-
 ### to run
 - locally: npm start:dev
 - deployment: npm start
 
-![main page](public/assets/main.png)
 
 
