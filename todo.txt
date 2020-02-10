@@ -20,6 +20,9 @@ Looks like i have to do some Proxy config staff for that.
 
 - (zoom out > 50%). Remove fixed position footer and make page more organized when zoomed so that footer always stays on the bottom but fixed.
 
+- make slider visible on hover
+
+- think about background image (maybe its too dark)
 
 API -> https://github.com/bttmly/nba // not a stable on development. Find another source or use below link.
     -> https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b
