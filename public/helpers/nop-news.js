@@ -9,7 +9,7 @@ const nextEvenTState = document.querySelector(".event-state");
 
 
 const getNOPNextEvent = () => {
-    fetch("http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/3")
+    fetch("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/3")
     .then(news => { return news.json()
     })
     .then((response) => {
@@ -37,7 +37,7 @@ const overallRecord = document.querySelector(".overall-record");
 const recordSummary = document.querySelector(".record-summary");
 
 const getNOPRecord = () => {
-    fetch("http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/3")
+    fetch("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/3")
     .then(news => { return news.json()
     })
     .then((response) => {

@@ -12,7 +12,7 @@ const description3 = document.querySelector('.description3');
 const headline3 = document.querySelector('.headline3');
 
 const getNews = () => {
-    fetch("http://site.api.espn.com/apis/site/v2/sports/basketball/nba/news")
+    fetch("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news")
     .then(news => { return news.json()
     })
     .then((response) => {
