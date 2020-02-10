@@ -1,5 +1,5 @@
 
-## nba live score 
+## nba live score/news and more
 ### live -> https://nba-pelicans.herokuapp.com/
 - Shows correct scores every day 
 - Up to date records and next Fixtures of New Orleans Pelicans Team
