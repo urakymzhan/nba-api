@@ -10,8 +10,8 @@ const PORT = process.env.PORT || 3000;
 // app.use(cors);
 
 // current date
-var moment = require('moment');
-const today = moment().format("l");
+// var moment = require('moment');
+// const today = moment().format("l");
 
 // serve static files
 app.use(express.static(__dirname + '/../public/'));

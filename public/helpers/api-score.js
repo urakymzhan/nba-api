@@ -1,3 +1,5 @@
+// ---- moved to scores.js file ------ 
+
 
 // const apiScore = document.querySelector(".live-api-score");
 // const currentDate = document.querySelector(".score-date-api");

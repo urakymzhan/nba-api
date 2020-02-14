@@ -19,8 +19,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    min-height: 100%;
-    position: relative;
+    height: 100%;
+    background-color: #282828;
 }
 
 /* --- HEADER ----- */
@@ -72,7 +72,10 @@ body {
 
 /* ------- MAIN ----- */
 .main {
-    margin-bottom: 140px;
+    /* margin-bottom: 140px; */
+    min-height: 100%;
+    /* margin-bottom: -80px; */
+    position: relative;
 }
 
 /* LIVE STATS */
@@ -294,11 +297,11 @@ to {opacity: 1}
 
 /* ----- FOOTER ----- */
 footer {
-    position:fixed;
-    bottom: 0px;
+    position: absolute;
+    /* bottom: 0px; */
     width: 100%;
     color: var(--colorGray);
-    min-height: 80px;
+    min-height: 60px;
     padding: 10px;
     background: #282828;
     border-top: 1px solid var(--white);
