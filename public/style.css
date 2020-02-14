@@ -305,6 +305,7 @@ footer {
     padding: 10px;
     background: #282828;
     border-top: 1px solid var(--white);
+    font-size: 12px;
 }
 
 
